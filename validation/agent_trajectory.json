@@ -1,0 +1,1778 @@
+[
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，1个人，二等座，优先最便宜的",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，1个人，二等座，优先最便宜的",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "从北京南出发，买最便宜的二等座",
+    "verdict": "failed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "请补充：to_station、travel_date",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": null,
+      "travel_date": null,
+      "earliest": "00:00",
+      "latest": "23:59",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": [
+        "to_station",
+        "travel_date"
+      ]
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，二等座",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，二等座",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "2026年10月25日从北京南到上海虹桥",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-24T19:53:59"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:39"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:39"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:42"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:43"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:48"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:50"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座",
+        "一等座",
+        "硬座",
+        "硬卧"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:55"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:24:59"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:00"
+  },
+  {
+    "task": "我后天下午要从南宁去上海，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "上海",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:02"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:25"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东站",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:38"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:38"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:40"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:42"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:44"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:48"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:50"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:54"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:56"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:57"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:25:59"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:02"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东站",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:04"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:04"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:07"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:09"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:11"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁东",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:14"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:18"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:20"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:23"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座",
+        "一等座",
+        "硬座",
+        "硬卧"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:27"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:31"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:33"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:35"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:36"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座",
+        "一等座",
+        "硬座",
+        "硬卧"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:26:36"
+  },
+  {
+    "task": "我后天下午要从南宁去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "南宁",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:27:49"
+  },
+  {
+    "task": "我后天下午要从北京去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:28:55"
+  },
+  {
+    "task": "我后天下午要从北京去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:28:59"
+  },
+  {
+    "task": "我后天下午要从北京去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:29:03"
+  },
+  {
+    "task": "我后天下午要从北京去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:29:04"
+  },
+  {
+    "task": "我后天下午要从北京去成都，最好从动站出发，",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京",
+      "to_station": "成都",
+      "travel_date": "2026-10-29",
+      "earliest": "12:00",
+      "latest": "18:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-10-27T15:29:06"
+  },
+  {
+    "task": "明天上午从北京南到上海虹桥，1人，优先二等座，价格最低",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-11-15",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-14T12:07:39"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，1个人，二等座，优先最便宜的",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，1个人，二等座，优先最便宜的",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  },
+  {
+    "task": "从北京南出发，买最便宜的二等座",
+    "verdict": "failed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "请补充：to_station、travel_date",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": null,
+      "travel_date": null,
+      "earliest": "00:00",
+      "latest": "23:59",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": [
+        "to_station",
+        "travel_date"
+      ]
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，二等座",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  },
+  {
+    "task": "2026年10月25日上午从北京南到上海虹桥，二等座",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用失败，使用规则解析回退"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": true,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  },
+  {
+    "task": "2026年10月25日从北京南到上海虹桥",
+    "verdict": "passed",
+    "steps": [
+      {
+        "action": "parse_travel_intent",
+        "summary": "LLM调用成功，结构化意图解析完成"
+      },
+      {
+        "action": "validate_travel_intent",
+        "summary": "使用Pydantic完成结构化参数校验"
+      }
+    ],
+    "final": "行程解析完成",
+    "fallback_used": false,
+    "intent": {
+      "from_station": "北京南",
+      "to_station": "上海虹桥",
+      "travel_date": "2026-10-25",
+      "earliest": "06:00",
+      "latest": "12:00",
+      "passengers": 1,
+      "seat_types": [
+        "二等座"
+      ],
+      "train_types": [],
+      "cheapest_first": true,
+      "missing_fields": []
+    },
+    "recorded_at": "2026-11-22T17:02:48"
+  }
+]

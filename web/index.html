@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>铁路出行助手</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <style>.result-tools{display:flex;align-items:flex-end;gap:12px;flex-direction:column}.result-tools label{font-size:11px;color:#64717e}.result-tools select{margin-left:6px;border:1px solid #dce3e9;padding:6px;background:#fff}.minimum-price{font-size:15px;font-weight:800;color:#b54922;margin-bottom:7px}.seat em{font-style:normal;color:#b54922;font-weight:700}</style>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><span class="rail-mark">路</span><div><b>铁路出行助手</b><small>官方查询 · 人工确认支付</small></div></div><div class="secure"><span></span>本地运行，不保存12306账号</div></header>
+  <main>
+    <section class="search-band">
+      <div class="search-inner">
+        <p class="eyebrow">TRAVEL PLANNER</p>
+        <h1>告诉我你想坐哪趟车</h1>
+        <div class="natural-search"><input id="request" placeholder="例如：明天上午从北京南到上海虹桥，2人，优先二等座"><button id="plan">解析并查询</button></div>
+        <p class="hint">支持今天、明天、后天、具体日期，以及高铁、动车、出发时段和席别偏好。</p>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <aside class="filters">
+        <div class="section-head"><p class="eyebrow">SEARCH DETAILS</p><h2>行程条件</h2></div>
+        <label>出发站<input id="from" placeholder="北京南"></label>
+        <label>到达站<input id="to" placeholder="上海虹桥"></label>
+        <label>出发日期<input id="date" type="date"></label>
+        <div class="two"><label>最早<input id="earliest" type="time" value="06:00"></label><label>最晚<input id="latest" type="time" value="22:00"></label></div>
+        <label>乘车人数<input id="passengers" type="number" min="1" max="9" value="1"></label>
+        <fieldset><legend>席别偏好</legend><label class="check"><input type="checkbox" name="seat" value="二等座" checked>二等座</label><label class="check"><input type="checkbox" name="seat" value="一等座">一等座</label><label class="check"><input type="checkbox" name="seat" value="硬卧">硬卧</label><label class="check"><input type="checkbox" name="seat" value="硬座">硬座</label><label class="check"><input type="checkbox" name="seat" value="软卧">软卧</label></fieldset>
+        <button id="search" class="primary">查询车票</button>
+        <button id="save-pref" class="secondary">保存我的偏好</button>
+      </aside>
+
+      <section class="results">
+        <div class="result-head"><div><p class="eyebrow">RECOMMENDED TRAINS</p><h2 id="result-title">等待查询</h2></div><div class="result-tools"><label>排序<select id="sort"><option value="price">价格从低到高</option><option value="recommend">综合推荐</option><option value="duration">用时最短</option></select></label><span id="source"></span></div></div>
+        <div id="status" class="empty-state"><b>输入出发地、目的地和日期</b><p>系统会按余票、时段和行程时间推荐车次。</p></div>
+        <div id="train-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="confirm-dialog">
+    <form method="dialog">
+      <p class="eyebrow">PURCHASE HANDOFF</p><h2>前往12306确认购买</h2>
+      <div id="chosen-train" class="chosen"></div>
+      <ul><li>将在中国铁路12306官方网站继续操作</li><li>请自行核对日期、车次、乘客和席别</li><li>订单提交与支付必须由你本人确认</li><li>本助手不会读取或保存账号、密码及支付信息</li></ul>
+      <label class="consent"><input id="confirm-check" type="checkbox">我已了解，并会在12306官方页面核对后付款</label>
+      <div class="dialog-actions"><button value="cancel" class="secondary">取消</button><button id="continue" value="default" class="primary" disabled>打开12306</button></div>
+    </form>
+  </dialog>
+  <div id="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
